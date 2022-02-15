@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 40px;
+    background-color: #a5a5a5;
+
+
+  }
+  
+  .calculator {
+    margin: auto;
+    background: black;
+    border-radius: 50px;
+    color: white;
+    height: 550px;
+    padding: 20px;
+    position: relative;
+    width: 280px;
+  }
+  
+    
+  .value {
+    font-size: 40px;
+    font-weight: 30px;
+    height: 158px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align:end;
+    position: relative;
+    top: 95px;
+  }
+  
+  .buttons-container {
+    display: grid;
+    grid-gap: 18px;
+    grid-template-columns: repeat(4, 45px);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  
+  .button {
+    align-items: center;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    height: 50px;
+    justify-content: center;
+  /*   transition: filter .3s; */
+    width: 50px;
+  }
+  
+  .button.function {
+    color: black;
+    background: #a5a5a5;
+  }
+  
+  .button.operator {
+    background: #f1a33c;
+  }
+  
+  .button.number-0 {
+    border-radius: 55px;
+    grid-column: 1 / span 2;
+    justify-content: flex-start;
+    padding-left: 25px;
+    width: 115px;
+  }
+  
+  .button:active,
+  .button:focus {
+    filter: brightness(120%);
+  }
+  .button.function{
+    filter: brightness(120%);
+  }
+
+  #ac{
+    position: relative;
+    top: 212px;
+    left: 13px;
+    z-index: 2;
+    color: black;
+
+  }
+
+  #equ{
+    position: relative;
+    top: 480px;
+    left: 183px;
+  }
+
+  #mult{
+    position: relative;
+    top: 276px;
+    left: 155px;
+  }
+
+  #divi{
+    position: relative;
+    top: 210px;
+    left: 170px;
+  }
+
+  .button.operator.multiplication{
+    color: #f1a33c;;
+  }
+  .button.operator.division{
+    color: #f1a33c;;
+  }
+
+  img{
+    width: 80px;
+    position: relative;
+    left: 95px;
+  }
